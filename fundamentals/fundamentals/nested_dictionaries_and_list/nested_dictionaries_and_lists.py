@@ -27,23 +27,23 @@ students = [
             {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
 
-def defiterateDictionary(some_list):
+def iterate_dictionary(some_list):
     for dict in some_list:
         output=""
         for info in dict:
             output += f"{info} - {dict[info]}, "
         print(output)
-defiterateDictionary(students)
+iterate_dictionary(students)
 
-def iterateDictionary2(key_first_name, some_list):
+def iterate_dictionary2(key_first_name, some_list):
     for dict in some_list:
         print(f"{dict[key_first_name]}")
-iterateDictionary2('first_name', students)
+iterate_dictionary2('first_name', students)
 
-def  iterateDictionary2(key_last_name, some_list):
+def  iterate_dictionary3(key_last_name, some_list):
     for dict in some_list:
         print(f"{dict[key_last_name]}")
-iterateDictionary2('last_name', students)
+iterate_dictionary3('last_name', students)
 
 dojo = {
     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
